@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portfolio.jquery.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <title>Uniq Studio Team</title>
+  </head>
+  <body>
+    <header>
+      Шапка
+    </header>
+    <section id="price">
+    <div class="container">
+    <h2>Цены на разработку сайта</h2>
+        <div class="row">
+        	<div class="col-md-3">
+        	<div class="price">
+        		<h3>Landing</h3>
+        		<p>oт 300$</p>
+        	</div>
+        	</div>
+        	<div class="col-md-3">
+        	<div class="price">
+        		<h3>Сайт-визитка</h3>
+        		<p>oт 350$</p>
+        	</div>
+        	</div>
+        	<div class="col-md-3">
+        	<div class="price">
+        	    <h3>Корпоративный сайт</h3>
+        	    <p>oт 450$</p>
+        	</div>
+        	</div>
+        	<div class="col-md-3">
+        	<div class="price">
+        		<h3>Интернет маганиз</h3>
+        		<p>oт 600$</p>
+        	</div>
+        	</div>
+        </div>
+        </div>
+    </section>
+
+    <section id="infoprice">
+      <div class="container">
+    	<h3>Все эти цены – ориентировочны: не факт, что ваш проект будет стоить именно столько, сколько указано в каталоге. На стоимость сайта влияет много факторов. Мы предлагаем консультацию по любой сложности сайтов – даже если вы у нас ничего не закажете.</h3>
+    	</div>
+    </section>
+
+    <section id="team">
+
+        <ul class="thumbs">
+            <li><a href="#thumb1" class="thumbnail" style="background-image: url('img/my-dream.png')">
+                <h4>Интернет магазин</h4><span class="description">My Dream</span></a>
+            </li>
+            <li>
+                <a href="#thumb2" class="thumbnail" style="background-image: url('img/gold-fising.png')">
+                <h4>Интернет магазин</h4><span class="description">Gold Fishing</span></a>
+            </li>
+            <li>
+                <a href="#thumb3" class="thumbnail" style="background-image: url('img/soteco.png')">
+                <h4>Интернет магазин</h4><span class="description">Soteco</span></a>
+            </li>
+            <li>
+                <a href="#thumb4" class="thumbnail" style="background-image: url('img/neobook.png')">
+                <h4>Landing</h4><span class="description">Neobook</span></a>
+            </li>
+            
+        </ul>
+
+        <div class="portfolio-content">
+            <div id="thumb1">
+                <div class="media"><img src="images/media.jpg"/></div>
+                <h1>My Dream</h1>
+                <p>Интернет магазин по продажи техники</p>
+                <a href="http://my-dream.kiev.ua/" class="btn btn-primary" target="_blank">На сайт</a>
+            </div>
+
+            <div id="thumb2">
+                <div class="media"><img src="images/media.jpg"/></div>
+                <h1>Gold Fishing</h1>
+                <p>Интернет магазин для рыбалки</p>
+                <a href="http://gold-fishing.com.ua/" class="btn btn-primary" target="_blank">На сайт</a>
+            </div>
+
+            <div id="thumb3">
+                <div class="media"><img src="images/media.jpg"/></div>
+                <h1>Soteco</h1>
+                <p>Интернет магазин химии</p>
+                <a href="http://soteco.org.ua/" class="btn btn-primary" target="_blank">На сайт</a>
+            </div>
+
+            <div id="thumb4">
+                <div class="media"><img src="images/media.jpg"/></div>
+                <h1>Neobook</h1>
+                <p>Информационный сайт интернет услуг</p>
+                <a href="https://neobook.net/" class="btn btn-primary" target="_blank">На сайт</a>
+            </div>
+        </div>
+     
+    </section>
+
+        
+    
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="portfolio.jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script src="filterizr/jquery.filterizr.min.js"></script>
+    <script src="js/controls.js"></script>
+
+    <!-- Kick off Filterizr -->
+    <script type="text/javascript">
+        $(function() {
+            //Initialize filterizr with default options
+            $('.filtr-container').filterizr();
+        });
+    </script>
+    <script>
+            $(document).ready(function() {
+                $('.thumbs').portfolio({
+                    cols: 4,
+                    transition: 'slideDown'
+                });
+            });
+        </script>
+  </body>
+</html>

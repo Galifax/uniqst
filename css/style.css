@@ -1,0 +1,122 @@
+*{
+	font-size: 17px;
+}
+
+
+#price .price{
+	border: 1px solid green;
+	border-radius: 10px;
+	text-align: center;
+	background: lightgreen;
+	padding-top: 10px;
+	transition: 1s;
+	margin-bottom: 20px;
+	margin-top: 10px;
+}
+#price h2{
+	text-align: center;
+}
+#price h3{
+	font-size: 20px;
+}
+#price .price:hover{
+	padding-top: 30px;
+	background: rgba(252,234,187,1);
+background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(14%, rgba(252,205,77,1)), color-stop(57%, rgba(248,181,0,1)), color-stop(77%, rgba(252,205,77,1)), color-stop(100%, rgba(251,223,147,1)));
+background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -o-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
+}
+#infoprice{
+	padding: 20px;
+	font-size: 20px;
+	text-align: center;
+background: rgba(252,234,187,1);
+background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(14%, rgba(252,205,77,1)), color-stop(57%, rgba(248,181,0,1)), color-stop(77%, rgba(252,205,77,1)), color-stop(100%, rgba(251,223,147,1)));
+background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -o-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
+}
+#infoprice h3{
+	font-size: 20px;
+}
+
+#team{
+	padding: 20px;
+}
+
+
+.cd-intro-block {
+  transition: transform 0.5s;
+  transition-timing-function: cubic-bezier(0.67, 0.15, 0.83, 0.83);
+}
+.cd-intro-block.projects-visible {
+  /* translate the .cd-intro-block element to reveal the projects slider */
+  transform: translateY(-90%);
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+ 
+.cd-projects-wrapper {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: visibility 0s 0.5s;
+}
+.cd-projects-wrapper.projects-visible {
+  visibility: visible;
+  transition: visibility 0s 0s;
+}
+
+.cd-slider li {
+  opacity: 0;
+}
+.cd-slider li.slides-in {
+  opacity: 1;
+  animation: cd-translate 0.5s;
+}
+@keyframes cd-translate {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .cd-slider li {
+    position: relative;
+    float: left;
+    width: 26%;
+    top: 50%;
+    transform: translateX(400%) translateY(-50%) rotate(-10deg);
+    transition: opacity 0s 0.3s, transform 0s 0.3s;
+  }
+  .cd-slider li.slides-in {
+    /* reset style */
+    animation: none;
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes cd-slide-n {
+  0%, 100% {
+    transform: translateY(-50%);
+  }
+  50% {
+    transform: translateY(-50%) translateX(translateValue);
+  }
+}
