@@ -1,5 +1,6 @@
 *{
 	font-size: 17px;
+	font-family: 'Mogra', cursive;
 }
 
 
@@ -19,6 +20,7 @@
 #price h3{
 	font-size: 20px;
 }
+
 #price .price:hover{
 	padding-top: 30px;
 	background: rgba(252,234,187,1);
@@ -59,22 +61,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 }
 .copy{
 /* IE10+ */ 
-background-image: -ms-linear-gradient(left, #a7cfdf 0%, #23538a 100%);
+background-image: -ms-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 /* Mozilla Firefox */ 
-background-image: -moz-linear-gradient(left, #a7cfdf 0%, #23538a 100%);
+background-image: -moz-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 /* Opera */ 
-background-image: -o-linear-gradient(left, #a7cfdf 0%, #23538a 100%);
+background-image: -o-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 /* Webkit (Safari/Chrome 10) */ 
-background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #a7cfdf), color-stop(100, #23538a));
+background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f8ffe8), color-stop(33, #E3F5AB), color-stop(100, #b7df2d));
 
 /* Webkit (Chrome 11+) */ 
-background-image: -webkit-linear-gradient(left, #a7cfdf 0%, #23538a 100%);
+background-image: -webkit-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 /* W3C Markup */ 
-background-image: linear-gradient(to right, #a7cfdf 0%, #23538a 100%);
+background-image: linear-gradient(to right, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 padding: 20px;
 }
