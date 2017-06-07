@@ -8,7 +8,7 @@
 	border: 1px solid green;
 	border-radius: 10px;
 	text-align: center;
-	background: lightgreen;
+	background: rgba(0,0,0,0.5);
 	padding-top: 10px;
 	transition: 1s;
 	margin-bottom: 20px;
@@ -21,7 +21,10 @@
 	font-size: 20px;
 }
 
-#price .price:hover{
+.header-btn{
+    transition: 1s;
+}
+#price .price:hover, .header-btn:hover{
 	padding-top: 30px;
 	background: rgba(252,234,187,1);
 background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
@@ -158,3 +161,48 @@ padding: 20px;
     transform: translateY(-50%) translateX(translateValue);
   }
 }
+
+
+header {
+    background-image: url("img/hedbg.jpg");
+    width: 100%;
+    height: 100vh
+
+}
+.header-blok{
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    color: #D6B95A;
+}
+.logo {
+    margin-top: 20px;
+    margin-left: 20px;
+    max-width: 600px;
+}
+.header-nav a{
+    color: #D6B95A;
+    font-size: 32px;
+    text-align: center;
+    text-decoration: none;
+}
+/*knopki sverhu*/
+header p{
+    text-align: center
+}
+
+.header-nav button {
+    height: 150px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid #D6B95A;
+    margin: 20px;
+}
+/*body{*/
+/*position: fixed;*/
+/*top: 0;*/
+/*left: 0;*/
+/*width: 100%;*/
+/*height: 100%;*/
+/*}*/
+
