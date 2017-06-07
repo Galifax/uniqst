@@ -187,16 +187,21 @@ header {
 }
 .header-nav a{
     color: #D6B95A;
-    font-size: 26px;
+    font-size: 32px;
     text-align: center;
     text-decoration: none;
 }
+/*knopki sverhu*/
+header p{
+text-align: center
+}
+
 .header-nav button{
-    height: 50px;
-    width: 100px;
+    height: 150px;
+    width: 200px;
     background-color: rgba(0,0,0,0.5);
     border: 2px solid black;
-
+    margin: 20px;
 
 /*body{*/
     /*position: fixed;*/
