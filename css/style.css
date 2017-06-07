@@ -58,8 +58,6 @@ background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
 }
 #footer{
-    line-height: 30px;
-    font-size: 36px;
 	background: rgba(252,234,187,1);
 background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
 background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(14%, rgba(252,205,77,1)), color-stop(57%, rgba(248,181,0,1)), color-stop(77%, rgba(252,205,77,1)), color-stop(100%, rgba(251,223,147,1)));
@@ -69,6 +67,16 @@ background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1)
 background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );
 }
+#footer p{
+    line-height: 40px;
+   
+	font-size: 25px;
+  }
+#footer ul li{
+    line-height: 40px;
+   
+	font-size: 25px;
+  }
 #footer ul li{
 	list-style-type: none;
 	margin-left:-35px;
