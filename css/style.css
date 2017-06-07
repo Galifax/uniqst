@@ -8,7 +8,7 @@
 	border: 1px solid green;
 	border-radius: 10px;
 	text-align: center;
-	background: rgba(0,0,0,0.5);
+	background: lightgreen;
 	padding-top: 10px;
 	transition: 1s;
 	margin-bottom: 20px;
@@ -21,9 +21,8 @@
 	font-size: 20px;
 }
 
-.header-btn{
-    transition: 1s;
-}
+
+
 #price .price:hover, .header-btn:hover{
 	padding-top: 30px;
 	background: rgba(252,234,187,1);
@@ -63,22 +62,22 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', end
 	margin-left:-35px;
 }
 .copy{
-/* IE10+ */ 
+/* IE10+ */
 background-image: -ms-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
-/* Mozilla Firefox */ 
+/* Mozilla Firefox */
 background-image: -moz-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
-/* Opera */ 
+/* Opera */
 background-image: -o-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
-/* Webkit (Safari/Chrome 10) */ 
+/* Webkit (Safari/Chrome 10) */
 background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #f8ffe8), color-stop(33, #E3F5AB), color-stop(100, #b7df2d));
 
-/* Webkit (Chrome 11+) */ 
+/* Webkit (Chrome 11+) */
 background-image: -webkit-linear-gradient(left, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
-/* W3C Markup */ 
+/* W3C Markup */
 background-image: linear-gradient(to right, #f8ffe8 0%, #E3F5AB 33%, #b7df2d 100%);
 
 padding: 20px;
@@ -103,7 +102,7 @@ padding: 20px;
   box-shadow: 0 4px 40px rgba(0, 0, 0, 0.6);
   cursor: pointer;
 }
- 
+
 .cd-projects-wrapper {
   position: fixed;
   z-index: 1;
@@ -164,7 +163,7 @@ padding: 20px;
 
 
 header {
-    background-image: url("img/hedbg.jpg");
+    background-image: url("../img/hedbg.jpg");
     width: 100%;
     height: 100vh
 
@@ -180,24 +179,39 @@ header {
     margin-left: 20px;
     max-width: 600px;
 }
-.header-nav a{
-    color: #D6B95A;
-    font-size: 32px;
-    text-align: center;
-    text-decoration: none;
-}
+
 /*knopki sverhu*/
 header p{
     text-align: center
 }
-
-.header-nav button {
+.header-nav  a{
     height: 150px;
     width: 200px;
     background-color: rgba(0, 0, 0, 0.5);
     border: 2px solid #D6B95A;
     margin: 20px;
+    display: inline-block;
+    color: #D6B95A;
+    font-size: 32px;
+    padding-top: 50px;
+    text-decoration: none;
 }
+
+#calculator{
+    color: #D6B95A;
+
+}
+.title{
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #D6B95A;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 80px;
+    margin-bottom: 50px;
+}
+
+
 /*body{*/
 /*position: fixed;*/
 /*top: 0;*/
@@ -206,3 +220,50 @@ header p{
 /*height: 100%;*/
 /*}*/
 
+}
+
+<style>
+
+}
+.diagram {
+
+
+    position: absolute;
+    top: 25%;
+    left: 25%;
+
+}
+
+.middle p {
+    color: black;
+}
+.middle h2 {
+    color: black;
+}
+
+
+
+.testo{
+    border: 2px solid black;
+    color: black;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.cal-btn{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #D6B95A;
+}
+#diagram{
+    margin-bottom: 60px;
+}
+@media only screen and (max-width : 500px) {
+    #bot-btn .btn{
+        display: block;
+        width: 100%;
+    }
+}
