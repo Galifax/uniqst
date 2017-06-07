@@ -1,165 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="portfolio.jquery.css">
-	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet">   
-	<link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="https://code.highcharts.com/highcharts.js"></script>
-      <script src="https://code.highcharts.com/modules/exporting.js"></script>
-
-    <title>Uniq Studio Team</title>
-  </head>
-  <body>
-
-  <nav id="navbar-top" class="navbar navbar-fixed-top navbar-style" role="navigation">
-      <div class="container">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse"
-                      data-target="#bs-example-navbar-collapse-1">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="index.html"><img
-                      style="height: 45px; vertical-align: top;margin-right: 9px;" src="images/Logo 1.png"></a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul id='main-nav' class="nav navbar-nav navbar-right">
-
-                  <li><a href="index.html">Главная</a></li>
-                  <li><a class="nav-a scroll" >Цены</a></li>
-                  <li><a class="nav-a scroll" >Информация</a></li>
-                  <li><a class="nav-a scroll">Команда</a></li>
-
-              </ul>
-          </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-  </nav>
-
-  <script>
-      $(window).scroll(function(){
-          if($(window).scrollTop()>500){
-              $('#navbar-top').show();
-          }
-          if($(window).scrollTop()<500){
-              $('#navbar-top').hide();
-          }
-      });
-  </script>
-
-    <header>
-
-        <div class="header-blok">
-            <img class="logo" src="img/logo 2.png">
-
-            <nav id="menu" class="header-nav hidden-xs">
-                <p>
-                    <a class="header-btn" href="#scroll-1">О нас</a>
-                    <a class="header-btn" href="#team">Портфолио</a>
-                    <a id="cal-btn" class="header-btn" href="#calculator">Кальклeятор</a>
-                    <a class="header-btn" href="#scroll-4">Команда</a>
-               </p>
-
-
-            </nav>
-
-
-
-
-        </div>
-
- </header>
-
-
-    <section id="price">
-
-        <div class="title">
-            <h2>Цены на разработку сайта</h2>
-        </div>
-    <div class="container">
-
-        <div class="row">
-        	<div class="col-md-3">
-        	<div class="price">
-        		<h3>Landing</h3>
-        		<p>oт 300$</p>
-                <p>Landing page – это страничка, на которой эффектно и ярко описывается ваш товар или услуга. Цель - побудить посетителя все же заказать ваш товар или услугу. Landing page – это мощный инструмент продаж.</p>
-        	</div>
-        	</div>
-        	<div class="col-md-3">
-        	<div class="price">
-        		<h3>Сайт-визитка</h3>
-        		<p>oт 350$</p>
-                <p>Сайт-визитка - сайт, состойщий из нескольких веб-страниц, содержащий основную информацию об организации, товарах, компании и т. д.</p>
-        	</div>
-        	</div>
-        	<div class="col-md-3">
-        	<div class="price">
-        	    <h3>Корпоративный сайт</h3>
-        	    <p>oт 450$</p>
-                <p>Корпоративный сайт – это сайт, на котором представлена полная информация о фирме, ее продукции, ее достижениях. Обычно такие сайты имеют два раздела: общий (для всех посетителей Интернета) и закрытый (для сотрудников фирмы – со служебной информацией).</p>
-        	</div>
-        	</div>
-        	<div class="col-md-3">
-        	<div class="price">
-        		<h3>Интернет магазин</h3>
-        		<p>oт 600$</p>
-                <p>Интернет-магазин – это сайт, где просто и визуально понятно представлены ваши товары. Посетители здесь могут ознакомиться с полным перечнем вашей продукции. Все разделы. Категории и наименования товаров «по полочкам» представлены на сайте, для всеобщего обозрения. Здесь они также смогут заказать эти товары.</p>
-        	</div>
-        	</div>
-        </div>
-        </div>
-    </section>
-
-    <section id="infoprice">
-      <div class="container">
-    	<h3>Все эти цены – ориентировочны: не факт, что ваш проект будет стоить именно столько, сколько указано в каталоге. На стоимость сайта влияет много факторов. Мы предлагаем консультацию по любой сложности сайтов – даже если вы у нас ничего не закажете.</h3>
-          <button id="start" class="btn btn-start btn-lg" >Начать расчет  стоимости услуг</button>
-    	</div>
-    </section>
-  
-
-
-
-
-
-
-
     <section id="calculator">
-    
+        <div class="title">
+            <h2>CALCULATOR</h2>
+        </div>
 
         <!-- Nachalo calkulatora-->
 
+        <div class="all">
    
 
 
 
                 <div id="bot-btn" class="btn-group btn-group-justified">
-
-                    <a id="but1" class="btn btn-default btn-lg">Тип сайта</a>
-                    <a id="but2" class="btn btn-default btn-lg">Верстка</a>
-                    <a id="but3" class="btn btn-default btn-lg">Управлятор</a>
-                    <a id="but4" class="btn btn-default btn-lg">Дизайн</a>
-                    <a id="but5" class="btn btn-default btn-lg">Наполнение</a>
-                    <a id="but6" class="btn btn-default btn-lg">Доп.функции</a>
-                    <a id="but7" class="btn btn-default btn-lg">Функции для магазинов</a>
-                    <a id="but8" class="btn btn-default btn-lg">Seo продвижение</a>
-
+                    <a id="but1" class="btn btn-default ">Тип сайта</a>
+                    <a id="but2" class="btn btn-default ">Верстка</a>
+                    <a  id="but3" class="btn btn-default ">Управлятор</a>
+                    <a  id="but4" class="btn btn-default">Дизайн</a>
+                    <a  id="but5" class="btn btn-default ">Наполнение</a>
+                    <a  id="but6" class="btn btn-default ">Доп.функции</a>
+                    <a  id="but7" class="btn btn-default ">Функции для магазинов</a>
+                    <a  id="but8" class="btn btn-default ">Seo продвижение</a>
+                    <!--<button href="#" id="but9" class="btn btn-default btn-lg">END</button>-->
                 </div>
+
+         </div>
     <div id="middle" class="middle"> <!-- color DELETE!!!!! -->
 
 
@@ -172,6 +35,9 @@
                         <section class="section1">
 
                             <h2 style="text-align: center">Тип сайта</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
 
                             <!-- Сменить ID !!!  -->
                             <div class="col-md-1"></div>
@@ -281,6 +147,11 @@
                         <section class="section2">
 
                             <h2 style="text-align: center">Верстка</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
+
+                            <!-- Сменить ID !!!  -->
 
                             <div class="col-md-3"></div>
 
@@ -334,6 +205,9 @@
                         <section class="section3">
 
                             <h2 style="text-align: center">Управлятор</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
 
                             <!-- Сменить ID !!!  -->
                             <div class="col-md-2"></div>
@@ -405,6 +279,8 @@
                         <section class="section4">
 
                             <h2 style="text-align: center">Дизайн</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
 
                             <div class="col-md-3"></div>
                             <!-- Сменить ID !!!  -->
@@ -458,6 +334,8 @@
                         <section class="section5">
 
                             <h2 style="text-align: center">Наполнение</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
 
                             <div class="col-md-3"></div>
                             <!-- Сменить ID !!!  -->
@@ -511,6 +389,10 @@
                         <section class="section6">
 
                             <h2 style="text-align: center">Доп.Функции</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
+
                             <!-- Сменить ID !!!  -->
                             <div class="col-md-1"></div>
                             <div class=" col-md-2 text-center">
@@ -619,6 +501,9 @@
                         <section class="section7">
 
                             <h2 style="text-align: center">Функции для магазинов</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
 
                             <!-- Сменить ID !!!  -->
                             <div class="col-md-2"></div>
@@ -712,6 +597,10 @@
                         <section class="section9">
 
                             <h2 style="text-align: center">Seo продвижение</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consectetur delectus, distinctio laborum laudantium nam natus neque obcaecati odio pariatur perspiciatis, quae, quis quisquam quo repudiandae saepe similique temporibus vero.</p>
+
+
+
                             <!-- Сменить ID !!!  -->
                             <div class="col-md-1"></div>
                             <div class=" col-md-2 text-center">
@@ -816,6 +705,10 @@
 
 
 
+                    <!-- начало блока 1 -->
+
+                    <!-- bottom buttons -->
+
 
                     <script type="text/javascript">
                         $('.header-nav #cal-btn').click(function(){
@@ -887,6 +780,9 @@
 
 
 
+        </div>
+
+
 
                 <!-- end блока 1 -->
 
@@ -895,15 +791,14 @@
 
 
 
-</div>
+
                 <div id="diagram" class="diagram-section ">
 
                     <div class="diagram ">
 
                         <div id="container" style="width:100%; min-height: 530px; margin: 1px "></div>
 
-                      </div>
-                 </div>
+
 
 
 
@@ -1116,302 +1011,27 @@
                                 $('.highcharts-button').hide();
 
                             });
+
+
+
+
+
                         </script>
 
 
 
-
-
-
-    </section>
-
-
-
-
-    <section id="team" class="portfolio">
-
-        <div class="title">
-            <h2>Portfolio</h2>
-        </div>
-
-        <!-- Page Content -->
-        <div class="container">
-
-            <!-- Page Header -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Page Heading
-                        <small>Secondary Text</small>
-                    </h1>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive" src="img/neobook.png" alt=""style="height: 400px;width: 700px; ">
-                    </a>
-                    <h3>
-                        <a href="#">Project One</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive" src="img/soteco.png" alt=""style="height: 400px;width: 700px; ">
-                    </a>
-                    <h3>
-                        <a href="#">Project Two</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://gold-fishing.com.ua">
-                        <img class="img-responsive" src="img/gold-fising.png" alt=""style="height: 400px;width: 700px; ">
-                    </a>
-                    <h3>
-                        <a href="http://gold-fishing.com.ua">На сайт</a>
-                    </h3>
-                    <p>FISH IS AWESOME</p>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://my-dream.kiev.ua">
-                        <img class="img-responsive" src="img/my-dream.png" alt=""style="height: 400px;width: 700px; ">
-                    </a>
-                    <h3>
-                        <a href="http://my-dream.kiev.ua">На сайт</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <!-- /.row -->
-
-            <!--<div class="container"> SEREDYK-->
-        <!--<ul class="thumbs">-->
-            <!--<li><a href="#thumb1" class="thumbnail" style="background-image: url('img/my-dream.png')">-->
-                <!--<h4>Интернет магазин</h4><span class="description">My Dream</span></a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="#thumb2" class="thumbnail" style="background-image: url('img/gold-fising.png')">-->
-                <!--<h4>Интернет магазин</h4><span class="description">Gold Fishing</span></a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="#thumb3" class="thumbnail" style="background-image: url('img/soteco.png')">-->
-                <!--<h4>Интернет магазин</h4><span class="description">Soteco</span></a>-->
-            <!--</li>-->
-            <!--<li>-->
-                <!--<a href="#thumb4" class="thumbnail" style="background-image: url('img/neobook.png')">-->
-                <!--<h4>Landing</h4><span class="description">Neobook</span></a>-->
-            <!--</li>-->
-            <!---->
-        <!--</ul>-->
-<!--</div>-->
-        <!--<div class="portfolio-content">-->
-            <!--<div id="thumb1">-->
-                <!--&lt;!&ndash;<div class="media"><img src="images/media.jpg"/></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<h1>My Dream</h1>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Интернет магазин по продажи техники</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="http://my-dream.kiev.ua/" class="btn btn-primary" target="_blank">На сайт</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-            <!--&lt;!&ndash;<div id="thumb2">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="media"><img src="images/media.jpg"/></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<h1>Gold Fishing</h1>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Интернет магазин для рыбалки</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="http://gold-fishing.com.ua/" class="btn btn-primary" target="_blank">На сайт</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-            <!--&lt;!&ndash;<div id="thumb3">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="media"><img src="images/media.jpg"/></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<h1>Soteco</h1>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Интернет магазин химии</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="http://soteco.org.ua/" class="btn btn-primary" target="_blank">На сайт</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-
-            <!--&lt;!&ndash;<div id="thumb4">&ndash;&gt;-->
-                <!--&lt;!&ndash;<div class="media"><img src="images/media.jpg"/></div>&ndash;&gt;-->
-                <!--&lt;!&ndash;<h1>Neobook</h1>&ndash;&gt;-->
-                <!--&lt;!&ndash;<p>Информационный сайт интернет услуг</p>&ndash;&gt;-->
-                <!--&lt;!&ndash;<a href="https://neobook.net/" class="btn btn-primary" target="_blank">На сайт</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-        <!--</div>-->
-
-    </section>
-
-
-
-    </section>
-
-    <!--ВЛАДОС ПОПРАВЬ !!!! -->
-
-    <section id="our-team">
-
-        <div class="our-team"style="margin-bottom: 50px;">
-            <div class="title">
-                <h3 style="text-transform: uppercase">наша команада специалистов</h3>
-            </div>
-            <div class="container">
-
-                <section id="testimonials" class="team section-area lite testimonails-section text-center our-team">
-                    <!-- Nested Container Starts -->
-                    <div class="container wow fadeInRight" data-wow-offset="">
-
-
-                        <!-- Testimonail Carousel Starts -->
-                        <div id="testimonail-carousel" class="owl-carousel">
-                            <!-- Testimonail #1 Starts -->
-                            <div class="testimonail-box" style="margin-left: 15px">
-                                <p>
-                                    <img src="images/5.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Реутов Дмитрий Анатолиевич </h4>
-                                <h5><em>Генеральный Директор</em></h5>
-                            </div>
-                            <!-- Testimonail #1 Ends -->
-
-                            <!-- Testimonail #1 Starts -->
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-
-                                <p>
-                                    <img src="images/2.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Черкасский Александр Владимирович</h4>
-                                <h5><em>Исполнительный директор</em></h5>
-                            </div>
-                            <!-- Testimonail #1 Ends -->
-
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-                                <p>
-                                    <img src="images/1.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Середюк Андрей Николаевич </h4>
-                                <h5><em>Руководитель разработки</em></h5>
-                            </div>
-
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-                                <p>
-                                    <img src="images/4.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Шушпанов Владислав Русланович</h4>
-                                <h5><em>Back-end разработчик</em></h5>
-                            </div>
-
-                            <!-- Testimonail #1 Starts -->
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-                                <p>
-                            <span class="glyphicon glyphicon-user" alt="Руководитель отдела продаж"
-                                  title="Руководитель отдела продаж" class="img-center img-responsive circle"></span>
-                                </p>
-                                <h4>Гриценко Андрей Олегович </h4>
-                                <h5><em>Руководитель отдела продаж</em></h5>
-                            </div>
-
-                            <!-- <div class="testimonail-box" style="margin-left: 15px">
-                                <p>
-                                    <img src="images/3.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Панченко Валентина </h4>
-                                <h5><em>Руководитель отдела копирайта</em></h5>
-                            </div> -->
-
-
-
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-                                <p>
-                                    <img src="images/6.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Черняк Виктор Сергеевич</h4>
-                                <h5><em>Web-designer</em></h5>
-                            </div>
-
-                            <div class="testimonail-box" style="margin-left: 15px">
-
-                                <p>
-                                    <img src="images/7.jpg" style="width: 150px; height: 150px; border-radius: 30px;"/>
-                                </p>
-                                <h4>Слободанюк Наталия Николаевна</h4>
-                                <h5><em>Фотограф</em></h5>
-                            </div>
-
-
-                        </div>
-                        <!-- Testimonail Carousel Ends -->
                     </div>
-                    <!-- Nested Container Ends -->
-                </section>
+
+
+
+                </div>
+
             </div>
+
+
         </div>
 
 
 
 
     </section>
-
-
-
-
-
-    <section id="footer">
-        <div class="container">
-        <div class="row">
-    	<div class="col-md-8">
-    	<h2>О нас</h2>
-    	<p>В нашей студии нет понятия «Я» - есть понятие «МЫ». Мы – это команда молодых, положительных специалистов. Мы будем работать индивидуально с вами, учтем все ваши пожелания и воплотим все ваши идеи в жизнь. Мы работаем только на качество, ведь для нас важен каждый клиент.</p>
-    	</div>
-    	<div class="col-md-4">
-    	<h2>Контакты</h2>
-    	<ul>
-    		<li><i class="fa fa-phone-square" aria-hidden="true"></i> 0988981223</li>
-    		<li><i class="fa fa-phone-square" aria-hidden="true"></i> 0738981223</li>
-    		<li><i class="fa fa-envelope-open" aria-hidden="true"></i> info@uniq-st.com</li>
-    		<li ><a href="https://vk.com/uniqst" target="_blank" style="font-size: 40px;"> <i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="https://vk.com/uniqst" target="_blank" style="font-size: 40px;"> <i class="fa fa-vk" aria-hidden="true"></i></a></li>
-    	</ul>
-    	</div>
-    	</div>
-    	
-    	</div>
-    </section>
-		<div class="copy text-center" >
-    		<p>Uniq Studio Team © 2017 Все права защищены</p>
-    	</div>
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-
-    <script src="portfolio.jquery.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script src="filterizr/jquery.filterizr.min.js"></script>
-    <script src="js/controls.js"></script>
-    <script src="js/main.js"></script>
-
-
-    <!-- Kick off Filterizr -->
-    <script type="text/javascript">
-        $(function() {
-            //Initialize filterizr with default options
-            $('.filtr-container').filterizr();
-        });
-    </script>
-    <script>
-            $(document).ready(function() {
-                $('.thumbs').portfolio({
-                    cols: 4,
-                    transition: 'slideDown'
-                });
-            });
-        </script>
-
-
-
-  </body>
-</html>
