@@ -41,9 +41,9 @@
               <ul id='main-nav' class="nav navbar-nav navbar-right">
 
                   <li><a href="index.html">Главная</a></li>
-                  <li><a class="nav-a scroll" >Цены</a></li>
-                  <li><a class="nav-a scroll" >Информация</a></li>
-                  <li><a class="nav-a scroll">Команда</a></li>
+                  <li><a class="nav-a scroll" href="#price">Цены</a>
+                  <li><a class="nav-a scroll" href="#portfolio">Портфолио</a></li>
+                  <li><a class="nav-a scroll" href="#our-team">О нас</a></li>
 
               </ul>
           </div><!-- /.navbar-collapse -->
@@ -68,10 +68,10 @@
 
             <nav id="menu" class="header-nav hidden-xs">
                 <p>
-                    <a class="header-btn" href="#scroll-1">О нас</a>
-                    <a class="header-btn" href="#team">Портфолио</a>
-                    <a id="cal-btn" class="header-btn" href="#calculator">Кальклeятор</a>
-                    <a class="header-btn" href="#scroll-4">Команда</a>
+                    <a class="header-btn" href="#price">Цены</a>
+                    <a class="header-btn" href="#portfolio">Портфолио</a>
+                    <a id="cal-btn" class="header-btn" href="#calculator">Калькулятор</a>
+                    <a class="header-btn" href="#our-team">О нас</a>
                </p>
 
 
@@ -153,14 +153,14 @@
 
                 <div id="bot-btn" class="btn-group btn-group-justified">
 
-                    <a id="but1" class="btn btn-default btn-lg">Тип сайта</a>
-                    <a id="but2" class="btn btn-default btn-lg">Верстка</a>
-                    <a id="but3" class="btn btn-default btn-lg">Управлятор</a>
-                    <a id="but4" class="btn btn-default btn-lg">Дизайн</a>
-                    <a id="but5" class="btn btn-default btn-lg">Наполнение</a>
-                    <a id="but6" class="btn btn-default btn-lg">Доп.функции</a>
-                    <a id="but7" class="btn btn-default btn-lg">Функции для магазинов</a>
-                    <a id="but8" class="btn btn-default btn-lg">Seo продвижение</a>
+                    <a id="but1" class="btn btn-test1 btn-lg">Тип сайта</a>
+                    <a id="but2" class="btn btn-test2 btn-lg">Верстка</a>
+                    <a id="but3" class="btn btn-test1 btn-lg">Управлятор</a>
+                    <a id="but4" class="btn btn-test2 btn-lg">Дизайн</a>
+                    <a id="but5" class="btn btn-test1 btn-lg">Наполнение</a>
+                    <a id="but6" class="btn btn-test2 btn-lg">Доп.функции</a>
+                    <a id="but7" class="btn btn-test1 btn-lg">Функции для магазинов</a>
+                    <!--<a id="but8" class="btn btn-default btn-lg">Seo продвижение</a>-->
 
                 </div>
     <div id="middle" class="middle"> <!-- color DELETE!!!!! -->
@@ -182,7 +182,7 @@
                                 <div class="testo">
                                     <h4 class="change">Лендинг</h4>
                                     <p>300$</p>
-                                    <button type="button" class="btn btn-primary btn-val btn-md"value="300">Выбрать</button>
+                                    <button type="button" class="btn btn-primary btn-val "value="300">Выбрать</button>
 
                                     <div id="demo11" class="collapse">
                                         <p>Landing page – это страничка, на которой эффектно и ярко описывается ваш товар или услуга. Цель -
@@ -827,9 +827,9 @@
 
 
                         $(document).ready(function() {
-                            $('#middle,#diagram, #bot-btn, #calculator ').hide();
+                            $('#text1, #diagram, #bot-btn, #calculator ').hide();
                             $('#start').click(function () {
-                                $('#middle, #text1, #bot-btn, #calculator').show('slow');
+                                $('#diagram, #text1, #bot-btn, #calculator').show('slow');
                                 $('#start').hide('slow');
                             });
 
@@ -1016,13 +1016,13 @@
 
                     title: {
 
-                        text: 'seredyuk <br> inc.',
+                        text: 'LOL!' ,
 
                         align: 'center',
 
                         verticalAlign: 'middle',
 
-                        y: 40
+                        y: 100
 
                     },
 
@@ -1052,9 +1052,9 @@
 
                             },
 
-                            startAngle: -120,
+                            startAngle: -100,
 
-                            endAngle: 120,
+                            endAngle: 100,
 
                             center: ['50%', '75%']
 
@@ -1413,6 +1413,7 @@
                 });
             });
         </script>
+
 
 
 

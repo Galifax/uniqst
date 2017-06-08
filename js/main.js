@@ -39,18 +39,31 @@ $(window).on('resize', function(){
 
 // LEO SCTIPT
 
-$(document).ready(function(){
-    $("#menu").on("click","button", function (event) {
+$(document).ready(function() {
+    $("#menu").on("click", "button", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
         //забираем идентификатор бока с атрибута href
-        var id  = $(this).attr('href'),
+        var id = $(this).attr('href'),
             //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
         //анимируем переход на расстояние - top за 1500 мс
-        $('body,html').animate({scrollTop: top}, 3500);
+        $('body,html').animate({scrollTop: top}, 1500);
     });
 });
 
 //Calculator script
 
+// $(document).ready(function(){
+//     $ ("#menu").click(function(){
+//         // скорость скролла
+//         var speed = 4000;
+//
+//         // место скролла
+//         var top = $('#our-team').offset().top;
+//
+//         $('html, body').animate({scrollTop: top}, speed);
+//
+//         return false;
+//     });
+// });
