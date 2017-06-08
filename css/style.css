@@ -305,7 +305,6 @@ header p{
 .btn-start:hover{
     color: white;
 }
-<<<<<<< HEAD
 .btn-primary{
     background-color: rgba(0, 0, 0, 0.8);
     color: gold;
@@ -324,8 +323,7 @@ header p{
     background-color: gold;
     color: rgba(0, 0, 0, 0.8);
     max-height: 100px;
-=======
-
+}
 
 .carousel ul li p{
    position: absolute; 
@@ -365,5 +363,4 @@ header p{
   -ms-user-select: none;      /* IE 10+ */
   -o-user-select: none;
   user-select: none;    
->>>>>>> c11bc2eef4db83144c8f8e31818dc7983b7c45e6
 }
