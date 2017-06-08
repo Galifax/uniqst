@@ -228,13 +228,11 @@ header p{
 }
 
 
+}
+
 
 <style>
 
-}
-
-body{
-  overflow-y: hidden;
 }
 .diagram {
 
@@ -243,6 +241,10 @@ body{
     top: 25%;
     left: 25%;
 
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .middle p {
