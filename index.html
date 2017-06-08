@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Pacifico&amp;subset=latin-ext" rel="stylesheet">   
 	<link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css" >
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="https://code.highcharts.com/highcharts.js"></script>
@@ -140,7 +140,10 @@
 
 
     <section id="calculator">
-    
+
+        <div class="title">
+            <h2>CALCULATOR</h2>
+        </div>
 
         <!-- Nachalo calkulatora-->
 
@@ -890,235 +893,235 @@
 
                 <!-- end блока 1 -->
 
+        <div id="diagram" class="diagram-section ">
 
-                <!-- ALL END -->
+            <div class="diagram ">
+
+                <div id="container" style="width:100%; min-height: 530px; margin: 1px "></div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script type="text/javascript">
+
+            var value = [];
+
+            var sum = 0;
+
+            $('.section1 .btn-val').click(function(){
+
+                value.v1 = Number($(this).val());
+
+                $('#but2').trigger('click');
+
+
+
+                sum = sum+value.v1;
+
+
+
+            });
+
+            $('.section2 .btn-val').click(function(){
+
+                value.v2 = Number($(this).val());
+
+                $('#but3').trigger('click');
+
+
+
+            });
+
+            $('.section3 .btn-val').click(function(){
+
+                value.v3 = Number($(this).val());
+
+                $('#but4').trigger('click');
+
+
+
+
+
+            });
+
+            $('.section4 .btn-val').click(function(){
+
+                value.v4 = Number($(this).val());
+
+                $('#but5').trigger('click');
+
+
+
+
+
+            });
+
+            $('.section5 .btn-val').click(function(){
+
+                value.v5 = Number($(this).val());
+
+                $('#but6').trigger('click');
+
+            });
+
+            $('.section6 .btn-val').click(function(){
+
+                value.v6 = Number($(this).val());
+
+                $('#but7').trigger('click');
+
+            });
+
+            $('.section7 .btn-val').click(function(){
+
+                value.v7 = Number($(this).val());
+
+                $('#but8').trigger('click');
+
+            });
+
+            $('.section8 .btn-val').click(function(){
+
+                value.v8 = Number($(this).val());
+
+                $(this).attr('class', 'btn btn-default active');
+
+                value.v9 = Number(value.v1) + Number(value.v2) + Number(value.v3) + Number(value.v4) + Number(value.v5) + Number(value.v6) + Number(value.v7) + Number(value.v8);
+
+            });
+
+
+
+
+
+            $('.btn').click(function(){
+
+
+
+                Highcharts.chart('container', {
+
+                    chart: {
+
+                        plotBackgroundColor: null,
+
+                        plotBorderWidth: 0,
+
+                        plotShadow: false
+
+                    },
+
+                    title: {
+
+                        text: 'seredyuk <br> inc.',
+
+                        align: 'center',
+
+                        verticalAlign: 'middle',
+
+                        y: 40
+
+                    },
+
+                    tooltip: {
+
+                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+
+                    },
+
+                    plotOptions: {
+
+                        pie: {
+
+                            dataLabels: {
+
+                                enabled: true,
+
+                                distance: -50,
+
+                                style: {
+
+                                    fontWeight: 'bold',
+
+                                    color: 'white'
+
+                                }
+
+                            },
+
+                            startAngle: -120,
+
+                            endAngle: 120,
+
+                            center: ['50%', '75%']
+
+                        }
+
+                    },
+
+                    series: [{
+
+                        type: 'pie',
+
+                        name: 'От общей цены',
+
+                        innerSize: '50%',
+
+                        data: [
+
+                            ['',       value.v1],
+
+                            ['',       value.v2],
+
+                            ['',       value.v3],
+
+                            ['',       value.v4],
+
+                            ['',       value.v5],
+
+                            ['',       value.v6],
+
+                            ['',       value.v7],
+
+                            ['',       value.v8],
+
+
+
+                            {
+
+                                name: 'Proprietary or Undetectable',
+
+                                y: 0.2,
+
+                                dataLabels: {
+
+                                    enabled: false
+
+                                }
+
+                            }
+
+                        ]
+
+                    }]
+
+                });
+
+                $('.highcharts-button').hide();
+
+            });
+        </script>
+
+
+
+        <!-- ALL END -->
 
 
 
 </div>
-                <div id="diagram" class="diagram-section ">
-
-                    <div class="diagram ">
-
-                        <div id="container" style="width:100%; min-height: 530px; margin: 1px "></div>
-
-                      </div>
-                 </div>
-
-
-
-
-
-                        <script type="text/javascript">
-
-                            var value = [];
-
-                            var sum = 0;
-
-                            $('.section1 .btn-val').click(function(){
-
-                                value.v1 = Number($(this).val());
-
-                                $('#but2').trigger('click');
-
-
-
-                                sum = sum+value.v1;
-
-
-
-                            });
-
-                            $('.section2 .btn-val').click(function(){
-
-                                value.v2 = Number($(this).val());
-
-                                $('#but3').trigger('click');
-
-
-
-                            });
-
-                            $('.section3 .btn-val').click(function(){
-
-                                value.v3 = Number($(this).val());
-
-                                $('#but4').trigger('click');
-
-
-
-
-
-                            });
-
-                            $('.section4 .btn-val').click(function(){
-
-                                value.v4 = Number($(this).val());
-
-                                $('#but5').trigger('click');
-
-
-
-
-
-                            });
-
-                            $('.section5 .btn-val').click(function(){
-
-                                value.v5 = Number($(this).val());
-
-                                $('#but6').trigger('click');
-
-                            });
-
-                            $('.section6 .btn-val').click(function(){
-
-                                value.v6 = Number($(this).val());
-
-                                $('#but7').trigger('click');
-
-                            });
-
-                            $('.section7 .btn-val').click(function(){
-
-                                value.v7 = Number($(this).val());
-
-                                $('#but8').trigger('click');
-
-                            });
-
-                            $('.section8 .btn-val').click(function(){
-
-                                value.v8 = Number($(this).val());
-
-                                $(this).attr('class', 'btn btn-default active');
-
-                                value.v9 = Number(value.v1) + Number(value.v2) + Number(value.v3) + Number(value.v4) + Number(value.v5) + Number(value.v6) + Number(value.v7) + Number(value.v8);
-
-                            });
-
-
-
-
-
-                            $('.btn').click(function(){
-
-
-
-                                Highcharts.chart('container', {
-
-                                    chart: {
-
-                                        plotBackgroundColor: null,
-
-                                        plotBorderWidth: 0,
-
-                                        plotShadow: false
-
-                                    },
-
-                                    title: {
-
-                                        text: 'seredyuk <br> inc.',
-
-                                        align: 'center',
-
-                                        verticalAlign: 'middle',
-
-                                        y: 40
-
-                                    },
-
-                                    tooltip: {
-
-                                        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-
-                                    },
-
-                                    plotOptions: {
-
-                                        pie: {
-
-                                            dataLabels: {
-
-                                                enabled: true,
-
-                                                distance: -50,
-
-                                                style: {
-
-                                                    fontWeight: 'bold',
-
-                                                    color: 'white'
-
-                                                }
-
-                                            },
-
-                                            startAngle: -120,
-
-                                            endAngle: 120,
-
-                                            center: ['50%', '75%']
-
-                                        }
-
-                                    },
-
-                                    series: [{
-
-                                        type: 'pie',
-
-                                        name: 'От общей цены',
-
-                                        innerSize: '50%',
-
-                                        data: [
-
-                                            ['',       value.v1],
-
-                                            ['',       value.v2],
-
-                                            ['',       value.v3],
-
-                                            ['',       value.v4],
-
-                                            ['',       value.v5],
-
-                                            ['',       value.v6],
-
-                                            ['',       value.v7],
-
-                                            ['',       value.v8],
-
-
-
-                                            {
-
-                                                name: 'Proprietary or Undetectable',
-
-                                                y: 0.2,
-
-                                                dataLabels: {
-
-                                                    enabled: false
-
-                                                }
-
-                                            }
-
-                                        ]
-
-                                    }]
-
-                                });
-
-                                $('.highcharts-button').hide();
-
-                            });
-                        </script>
-
-
 
 
 
@@ -1126,7 +1129,7 @@
     </section>
 
 
-
+<div class="clearfix"></div>
 
     <section id="team" class="portfolio">
 
