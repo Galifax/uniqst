@@ -37,13 +37,7 @@
 #price .price:hover, .header-btn:hover{
 	padding-top: 30px;
 	background: rgba(0,0,0,0.9);
-/*background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);*/
-/*background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(14%, rgba(252,205,77,1)), color-stop(57%, rgba(248,181,0,1)), color-stop(77%, rgba(252,205,77,1)), color-stop(100%, rgba(251,223,147,1)));*/
-/*background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);*/
-/*background: -o-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);*/
-/*background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);*/
-/*background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 14%, rgba(248,181,0,1) 57%, rgba(252,205,77,1) 77%, rgba(251,223,147,1) 100%);*/
-/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1 );*/
+
 }
 #infoprice{
 	padding: 20px;
@@ -300,10 +294,7 @@ header p{
 .btn-start:hover{
     color: white;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 60f7a33de6a66ee87e01335fedd9b80f133e0fe8
 .btn-primary{
     background-color: rgba(0, 0, 0, 0.8);
     color: gold;
@@ -363,4 +354,8 @@ header p{
   -o-user-select: none;
   user-select: none;    
 
+}
+
+}
+<style>
 }
