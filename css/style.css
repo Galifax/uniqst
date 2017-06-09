@@ -221,15 +221,6 @@ header p{
 
 }
 
-
-/*body{*/
-/*position: fixed;*/
-/*top: 0;*/
-/*left: 0;*/
-/*width: 100%;*/
-/*height: 100%;*/
-/*}*/
-
 .diagram {
 
 
@@ -237,6 +228,10 @@ header p{
     top: 25%;
     left: 25%;
 
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .middle p {
@@ -272,6 +267,8 @@ header p{
         width: 100%;
     }
 }
+
+
 
 .portfolio-item {
     margin-bottom: 25px;
@@ -309,15 +306,14 @@ header p{
     color: gold;
     max-height: 100px;
 }
-.btn-test2 {
+.btn-test2{
     background-color: gold;
     color: rgba(0, 0, 0, 0.8);
     max-height: 100px;
 }
 
-
 .carousel ul li p{
-   position: absolute;
+   position: absolute; 
    margin: 0 10px 0 10px; 
    padding: 0 10px 0 10px; 
    background: rgba(0,0,0,0.5); 
@@ -353,6 +349,7 @@ header p{
   -ms-user-select: none;      /* IE 10+ */
   -o-user-select: none;
   user-select: none;    
+
 
 }
 
