@@ -60,6 +60,21 @@
                   <li><a class="nav-a scroll" href="#our-team">О нас</a></li>
 
               </ul>
+
+              <script>$(document).ready(function() {
+                  $("#menu, #menu2").on("click", "a", function (event) {
+                      //отменяем стандартную обработку нажатия по ссылке
+                      event.preventDefault();
+                      //забираем идентификатор бока с атрибута href
+                      var id = $(this).attr('href'),
+                          //узнаем высоту от начала страницы до блока на который ссылается якорь
+                          top = $(id).offset().top;
+                      //анимируем переход на расстояние - top за 1500 мс
+                      $('body,html').animate({scrollTop: top}, 1500);
+                  });
+              });</script>
+
+
           </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
   </nav>
@@ -80,7 +95,7 @@
         <div class="header-blok">
             <img class="logo" src="img/logo 2.png">
 
-            <nav id="menu" class="header-nav hidden-xs">
+            <nav id="menu2" class="header-nav hidden-xs">
                 <p>
 
                     <a class="header-btn" href="#price">Цены</a>
@@ -90,6 +105,7 @@
 
 
                </p>
+
 
 
             </nav>
@@ -177,7 +193,7 @@
                     <a id="but5" class="btn btn-test1 btn-lg disabled">Наполнение</a>
                     <a id="but6" class="btn btn-test2 btn-lg disabled">Доп.функции</a>
                     <a id="but7" class="btn btn-test1 btn-lg disabled">Функции для магазинов</a>
-                    <!--<a id="but8" class="btn btn-default btn-lg">Seo продвижение</a>-->
+                    <a id="but8" class="btn btn-test2 btn-lg disabled">Result</a>
 
                 </div>
 
@@ -475,58 +491,71 @@
                     <!-- TEXT BLOK END -->
 
                     <!-- TEXT BLOK START -->
-                    <div id="text8">
-                        <section class="section9">
+                    <!--<div id="text8">-->
+                        <!--<section class="section9">-->
 
-                            <h2 style="text-align: center">Seo продвижение</h2>
+                            <!--<h2 style="text-align: center">Seo продвижение</h2>-->
 
-                            <div class="col-md-1"></div>
-                            <div class=" col-md-2 text-center">
-                                <div class="testo">
-                                    <h4 class="change">Landing page</h4>
-                                    <p>60$</p>
-                                    <button type="button" class="btn btn-primary btn-val btn-md"value="60">Выбрать</button>
-                                </div>
-                            </div>
+                            <!--<div class="col-md-1"></div>-->
+                            <!--<div class=" col-md-2 text-center">-->
+                                <!--<div class="testo">-->
+                                    <!--<h4 class="change">Landing page</h4>-->
+                                    <!--<p>60$</p>-->
+                                    <!--<button type="button" class="btn btn-primary btn-val btn-md"value="60">Выбрать</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class=" col-md-2 text-center">
-                                <div class="testo">
-                                    <h4 class="change">Сайт-визитка</h4>
-                                    <p>80$</p>
-                                    <button type="button" class="btn btn-primary btn-val"value="80">Выбрать</button>
-                                </div>
-                            </div>
+                            <!--<div class=" col-md-2 text-center">-->
+                                <!--<div class="testo">-->
+                                    <!--<h4 class="change">Сайт-визитка</h4>-->
+                                    <!--<p>80$</p>-->
+                                    <!--<button type="button" class="btn btn-primary btn-val"value="80">Выбрать</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class=" col-md-2 text-center">
-                                <div class="testo">
-                                    <h4 class="change">Корпоративный сайт</h4>
-                                    <p>120$</p>
-                                    <button type="button" class="btn btn-primary btn-val"value="120">Выбрать</button>
-                                </div>
-                            </div>
+                            <!--<div class=" col-md-2 text-center">-->
+                                <!--<div class="testo">-->
+                                    <!--<h4 class="change">Корпоративный сайт</h4>-->
+                                    <!--<p>120$</p>-->
+                                    <!--<button type="button" class="btn btn-primary btn-val"value="120">Выбрать</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class=" col-md-2 text-center">
-                                <div class="testo">
-                                    <h4 class="change">Интернет магазин(первые 20 разделов)</h4>
-                                    <p>155$</p>
-                                    <button type="button" class="btn btn-primary btn-val"value="155">Выбрать</button>
-                                </div>
-                            </div>
+                            <!--<div class=" col-md-2 text-center">-->
+                                <!--<div class="testo">-->
+                                    <!--<h4 class="change">Интернет магазин(первые 20 разделов)</h4>-->
+                                    <!--<p>155$</p>-->
+                                    <!--<button type="button" class="btn btn-primary btn-val"value="155">Выбрать</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
 
-                            <div class=" col-md-2 text-center">
-                                <div class="testo">
-                                    <h4 class="change">Каждые следующие 20 страниц\разделов + 40$</h4>
-                                    <p>40$</p>
-                                    <button type="button" class="btn btn-primary btn-val"value="40">Выбрать</button>
-                                </div>
-                            </div>
-                            <div class="col-md-1"></div>
+                            <!--<div class=" col-md-2 text-center">-->
+                                <!--<div class="testo">-->
+                                    <!--<h4 class="change">Каждые следующие 20 страниц\разделов + 40$</h4>-->
+                                    <!--<p>40$</p>-->
+                                    <!--<button type="button" class="btn btn-primary btn-val"value="40">Выбрать</button>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div class="col-md-1"></div>-->
 
-                        </section>
-                    </div>
-                    <!-- TEXT BLOK END -->
+                        <!--</section>-->
+                    <!--</div>-->
+                    <!--&lt;!&ndash; TEXT BLOK END &ndash;&gt;-->
 
+<div id="text8">
+    <h2 style="text-align: center">Result</h2>
+        <div class="sum">
+            <p id="sum-p"></p>
+            <p> Вы можите связатся с нами по этому номеру </p>
+            <p> 101 , 102 , 911</p>
+            <img src="data:image/jpeg;base64,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">
+            <a id="a" class="btn btn-test1 btn-lg ">Отдать деньги!</a>
+            <a id="a" class="btn btn-test1 btn-lg ">Здесь можеть быть ваша кнопка</a>
+            <p>Место для рекламмы =)</p>
+        </div>
+</div>
 
+</div>
 
 
                     <script type="text/javascript">
@@ -631,7 +660,7 @@
                 $('#but2').attr('class','btn btn-test2 btn-lg');
 
 
-                sum = sum+value.v1;
+                sum = sum + value.v1
 
 
 
@@ -645,7 +674,7 @@
 
                 $('#but3').attr('class','btn btn-test1 btn-lg');
 
-
+                sum = sum + value.v2
             });
 
             $('.section3 .btn-val').click(function(){
@@ -657,7 +686,7 @@
                 $('#but4').attr('class','btn btn-test2 btn-lg');
 
 
-
+                sum = sum + value.v3
             });
 
             $('.section4 .btn-val').click(function(){
@@ -668,7 +697,7 @@
 
                 $('#but5').attr('class','btn btn-test1 btn-lg');
 
-
+                sum = sum + value.v4
 
             });
 
@@ -679,6 +708,7 @@
                 $('#but6').trigger('click');
 
                 $('#but6').attr('class','btn btn-test2 btn-lg');
+                sum = sum + value.v5
             });
 
             $('.section6 .btn-val').click(function(){
@@ -688,6 +718,7 @@
                 $('#but7').trigger('click');
 
                 $('#but7').attr('class','btn btn-test1 btn-lg');
+                sum = sum + value.v6
             });
 
             $('.section7 .btn-val').click(function(){
@@ -697,6 +728,9 @@
                 $('#but8').trigger('click');
 
                 $('#but8').attr('class','btn btn-test2 btn-lg');
+                sum = sum + value.v7
+
+                $('#sum-p').html(sum+'$');
             });
 
             $('.section8 .btn-val').click(function(){
@@ -731,7 +765,7 @@
 
                     title: {
 
-                        text: 'LOL!' ,
+                        text: sum+'$',
 
                         align: 'center',
 
@@ -787,7 +821,7 @@
 
                         data: [
 
-                            ['Тип',       value.v1],
+                            ['Тип',      value.v1],
 
                             ['Верстка',       value.v2],
 
@@ -825,7 +859,7 @@
 
                 });
 
-                $('.highcharts-button').hide();
+                $('.highcharts-button, .highcharts-credits').hide();
 
             });
         </script>
@@ -834,9 +868,6 @@
 
         <!-- ALL END -->
 
-
-
-</div>
 
 
 
@@ -854,66 +885,75 @@
 
         <!-- Page Content -->
         <div class="container">
-
-            <!-- Page Header -->
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Page Heading
-                        <small>Secondary Text</small>
-                    </h1>
-                </div>
-            </div>
-            <!-- /.row -->
 
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive" src="img/neobook.png" alt=""style="height: 200px;width: 500px; ">
-                    </a>
-                    <h3>
-                        <a href="#">Project One</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="#">
-                        <img class="img-responsive" src="img/soteco.png" alt=""style="height: 200px;width: 500px; ">
-                    </a>
-                    <h3>
-                        <a href="#">Project Two</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-                </div>
-            </div>
-            <!-- /.row -->
 
-            <!-- Projects Row -->
-            <div class="row">
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://gold-fishing.com.ua">
-                        <img class="img-responsive" src="img/gold-fising.png" alt=""style="height: 200px;width: 500px; ">
-                    </a>
-                    <h3>
-                        <a href="http://gold-fishing.com.ua">На сайт</a>
-                    </h3>
-                    <p>FISH IS AWESOME</p>
+                <div align="center">
+                    <button class="btn btn-primary btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-primary filter-button" data-filter="landpage">Landing page</button>
+                    <button class="btn btn-primary filter-button" data-filter="vizitka">Сайт-визитка</button>
+                    <button class="btn btn-primary filter-button" data-filter="corp">Корпоративный сайт</button>
+                    <button class="btn btn-primary filter-button" data-filter="magaz">Интернет магазин</button>
                 </div>
-                <div class="col-md-6 portfolio-item">
-                    <a href="http://my-dream.kiev.ua">
-                        <img class="img-responsive" src="img/my-dream.png" alt=""style="height: 200px;width: 500px; ">
-                    </a>
-                    <h3>
-                        <a href="http://my-dream.kiev.ua">На сайт</a>
-                    </h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+                <br/>
+
+
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter magaz ">
+                    <a class="crop" href="http://my-dream.kiev.ua/"><img src="./img/my-dream.png" class="img-responsive">
+                        <p class="port-text">my-dream.kiev.ua</p></a>
                 </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter magaz">
+                    <a class="crop" href="http://gold-fishing.com.ua/"> <img src="./img/gold-fising.png" class="img-responsive">
+                    <p class="port-text">gold-fishing.com.ua</p></a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter magaz">
+                    <a class="crop" href="http://soteco.org.ua/"> <img src="./img/soteco.png" class="img-responsive">
+                    <p class="port-text">soteco.org.ua</p></a>
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter landpage">
+                    <a class="crop" href="https://neobook.net/" > <img src="./img/neobook.png" class="img-responsive">
+                        <p class="port-text">neobook.net</p></a>
+                </div>
+
             </div>
         </div>
+<script>$(document).ready(function(){
 
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
 
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('1000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+
+        }
+    });
+
+    if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+
+});</script>
 
     </section>
+
+
+
+
+  </section>
 
 
 
