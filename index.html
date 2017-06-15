@@ -17,7 +17,7 @@
       <script src="https://code.highcharts.com/highcharts.js"></script>
       <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <link href="http://www.anowave.com/factory/cdn/styles/rainbow/themes/github.css" rel="stylesheet" type="text/css" />
-        <script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
+
         <!-- /.CDN -->
         <script type="text/javascript" src="js/jquery.anoslide.js"></script>
       <!--[if lt IE 9]>
@@ -1050,12 +1050,95 @@
     	</div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
+  <span style="position: fixed;bottom: 5%;right: 1%;z-index: 1000;font-size:60px;" id='scrollup'
+        class="spanMy text-uppercase text-center phone-icone-fixed  ">
+
+      <a href="#" class="btn btn-sm btn-transparent inverse" data-toggle="modal" data-target="#phoneModal" style="outline: 0!important;"><i class="fa fa-phone wow pulse animated" data-wow-duration="2s" data-wow-iteration="infinite"></i></a>
+   </span>
+  <div class="reanimation-modal modal fade" id="phoneModal" role="dialog">
+      <div class="modal-dialog" style="background-color: #ffffff;padding:28px">
+          <div class="modal-main">
+              <h3 class="text-center">Бесплатная консультация</h3>
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <form action="#" class="appointment-form" id="phoneForm">
+
+
+                  <!-- Nested Row Starts -->
+                  <div class="row">
+                      <!-- Name Field Starts -->
+                      <div class="col-md-12">
+                          <div class="form-group has-feedback">
+                              <label for="name" class="sr-only">Your Name: </label>
+                              <input type="text" class="form-control animation" name="name" id="name" required="required"
+                                     placeholder="Ваше имя">
+                              <span class="fa fa-user form-control-feedback" aria-hidden="true"></span>
+                          </div>
+                      </div>
+                      <!-- Name Field Ends -->
+                      <!-- Email Field Starts -->
+                      <input type="hidden" value="null" name="email" id="email">
+
+                      </input>
+                      <!-- Email Field Ends -->
+                      <!-- Phone No Field Starts -->
+                      <div class="col-md-12">
+                          <div class="form-group has-feedback">
+                              <label for="phone" class="sr-only">Phone Number: </label>
+                              <input type="text" class="form-control animation phone-mask" name="phone" id="phone"
+                                     required="required"
+                                     placeholder="Ваш телефон">
+                              <span class="fa fa-phone form-control-feedback" aria-hidden="true"></span>
+                          </div>
+                      </div>
+                      <!-- Phone No Field Ends -->
+                      <!-- Message Field Starts -->
+                      <input type="hidden" value="..." name="message" id="message">
+                      <!-- Message Field Ends -->
+
+                      <div class="text-center col-sm-12">
+                          <input type="submit" class="btn btn-secondary animation col-sm-12" value="ПОЗВОНИТЕ МНЕ!">
+                      </div>
+
+                      <div id="success2"></div>
+                  </div>
+                  <!-- Nested Row Ends -->
+              </form>
+          </div>
+
+
+          <!-- Modal content-->
+          <div class='modal-success hidden'><p class='text-center'><span class='fa fa-check-circle'></span></p>
+              <h3>Спасибо! Наши специалисты свяжутся</h3>
+              <div class="close-modal" data-dismiss="modal">
+                  <div class="lr">
+                      <div class="rl"></div>
+                  </div>
+              </div>
+              <h3>с Вами в ближайшее время!</h3></div>
+
+      </div>
+
+
+  </div>
+
+
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
     <script src="portfolio.jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <script src="filterizr/jquery.filterizr.min.js"></script>
     <script src="js/controls.js"></script>
     <script src="js/main.js"></script>
 
+  <script src="js/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
 
     <!-- Kick off Filterizr -->
     <script type="text/javascript">

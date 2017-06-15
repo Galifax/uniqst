@@ -487,3 +487,451 @@ body{
 {
     margin-bottom: 30px;
 }
+
+#scrollup .fa {
+    transition: 1s;
+    height: 75px;
+    width: 75px;
+    line-height: 70px;
+    text-align: center;
+    border: 3px solid #ffffff;
+    border-radius: 100%;
+    font-size: 40px;
+    background: gold;
+    color: #e94651;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.modal {
+    text-align: center;
+    padding: 0 !important;
+}
+
+#phoneModal .modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+
+/* modal*/
+.modal-content input:focus{
+    outline: 2px solid #ac5aff;
+}
+
+.modal {
+    text-align: center;
+    padding: 0!important;
+}
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -4px;
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+    /*width: 550px;*/
+}
+
+.modal-content{
+    border-radius: 0;
+}
+
+.modal-content .icon{
+    background-color: #e94651;
+    font-size: 25px;
+    height: 80px;
+    line-height: 85px;
+    text-align: center;
+    width: 44px;
+    color:white;
+    margin-right: 10px;
+    margin-left: 15px;
+    margin-bottom: -20px;
+}
+
+.modal-content .icon::after {
+    content: "";
+    height: 0;
+    width: 0;
+    display: block;
+    position: relative;
+    top:-25px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-right: 22px solid  #e94651;
+    border-left: 22px solid  #e94651;
+}
+
+
+
+.modal-content .modal-text{
+    padding-left: 70px;
+    padding-right: 40px;
+    position: relative;
+    top:-30px;
+    padding-bottom: 20px;
+}
+.modal-header {
+    padding-top: 0px;
+}
+
+.modal-text .modal-top-text{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+[09.06.17, 14:50:30] V_SH: #phoneModal .modal-dialog {
+                         display: inline-block;
+                         text-align: left;
+                         vertical-align: middle;
+
+                         border-radius: 5px;
+                     }
+
+
+
+
+
+#phoneModal .modal-main h3{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+#phoneModal .modal-success h3{
+    font-size: 24px;
+
+}
+
+a[data-target="#phoneModal"]:active{
+    background: none;
+
+}
+
+#scrollup .glyphicon{
+    outline: none;
+    background: green;
+    border-style: solid;
+    border-color: #e3e3e3;
+    border-width: 2px;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    border-radius: 500px;
+    font-size: 35px;
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    transition: transform 200ms cubic-bezier(.19,1,.22,1);
+    text-decoration: none;
+}
+
+
+.spanMy:active {
+    border: 0;outline: 0;background: 0;box-shadow: none;
+}
+.spanMy a:active{
+    border: 0;outline: 0;background: 0;box-shadow: none;
+}
+
+.modal-success{
+    min-height: 204px;
+    color:#19a6b7;
+}
+
+.modal-success h3{
+    text-align: center;
+
+
+}
+[09.06.17, 14:50:39] V_SH: .modal-success .fa-check-circle{
+                         font-size:52px;
+                         margin-bottom: 10px;
+
+                     }
+
+
+/*5555*/
+
+#phoneForm .form-control{
+    box-shadow: none;
+    border-color: gainsboro;
+}
+
+#phoneForm .form-control:focus{
+    box-shadow: none;
+    border-color: #888888;
+}
+
+#phoneForm .form-control {
+    box-shadow: none;
+    border-color: gainsboro;
+}
+.appointment-form input.form-control[type="text"], .appointment-form input.form-control[type="email"] {
+    height: 52px;
+    padding: 16px 20px 16px 50px;
+}
+.appointment-form .form-control {
+    -webkit-box-shadow: inset 2px 3px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 2px 3px rgba(0, 0, 0, 0.15);
+    box-shadow: inset 2px 3px rgba(0, 0, 0, 0.15);
+}
+.appointment-form .form-control {
+    padding: 15px 20px 13px 45px;
+    color: #888;
+    font-weight: 300;
+    border-color: #f5f5f5;
+}
+
+.appointment-form .btn-secondary {
+    margin-top: 20px;
+    padding: 12px 40px;
+    font-size: 18px;
+    color:white;
+    background-color: #ff8e83;
+}
+
+.appointment-form .form-control-feedback {
+    margin-top: 10px;
+    margin-left: 10px;
+    left: 0;
+    color: #949494;
+
+}
+
+.reanimation-modal .close-modal .lr .rl {
+    height: 28px;
+    width: 2px;
+    background-color: #5c5c5c;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052;
+}
+
+.reanimation-modal .close-modal .lr {
+    height: 28px;
+    width: 2px;
+    margin-left: 25px;
+    background-color: #5c5c5c;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    z-index: 1051;
+}
+
+.reanimation-modal .close-modal .lr .rl {
+    height: 28px;
+    width: 2px;
+    background-color: #5c5c5c;
+    transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    z-index: 1052;
+}
+
+.reanimation-modal .close-modal {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+[09.06.17, 14:50:46] V_SH: @-webkit-keyframes rotating / Safari and Chrome / {
+0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+5% {
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+10% {
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+15% {
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+20% {
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+25% {
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+30% {
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+35% {
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+40% {
+    -ms-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -webkit-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+45% {
+    -ms-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+}
+50% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+100% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+}
+@keyframes rotating {
+    0% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    5% {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    10% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    15% {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    20% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    25% {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    30% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    35% {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    40% {
+        -ms-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -webkit-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: rotate(30deg);
+    }
+    45% {
+        -ms-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    50% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+
+}
+
+#scrollup .fa-phone {
+    -webkit-animation: rotating 4.05s  ease-in-out infinite;
+    -moz-animation: rotating 4.05s  ease-in-out  infinite;
+    -ms-animation: rotating 4.05s  ease-in-out  infinite;
+    -o-animation: rotating 4.05s  ease-in-out  infinite;
+    animation: rotating 4.05s  ease-in-out  infinite;
+
+
+
+
+}
