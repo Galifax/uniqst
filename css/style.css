@@ -188,7 +188,7 @@ header {
     height: 100vh
     background-repeat:no-repeat;
     background-position:center;
-    background-size: 100%;
+    background-size: cover;
 }
 .header-blok{
     background-color: rgba(0,0,0,0.5);
